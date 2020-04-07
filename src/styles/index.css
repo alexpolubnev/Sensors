@@ -1,0 +1,111 @@
+.sensors {
+  flex: 0 0 70%;
+  padding: 20px 0px;
+  margin: 0px 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+}
+.sensors-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px 15px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sensors-header__btns {
+  display: flex;
+}
+.sensors-header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.sensors-header__img:first-child {
+  margin-right: 10px;
+}
+.sensors .sensors-settings {
+  margin: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sensors .sensors-settings__id {
+  display: flex;
+  align-items: center;
+}
+.sensors .sensors-settings__id h3 {
+  margin-left: 0px;
+}
+.sensors .sensors-settings__sort {
+  display: flex;
+  align-items: center;
+}
+.sensors .sensors-settings__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.sensors .sensors-settings__title {
+  opacity: 0.5;
+  color: #212121;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.sensors .sensors-settings__title::selection {
+  background: transparent;
+}
+.sensors .sensors-settings__title span {
+  transition: 0.5s;
+}
+.sensors .sensors-settings__title span::selection {
+  background: transparent;
+}
+.sensors .sensors-settings__title.top span,
+.sensors .sensors-settings__title.bottom span {
+  display: inline-block;
+  color: #fdc605;
+}
+.sensors .sensors-settings__title.top span {
+  transform: rotate(180deg);
+}
+.sensors .sensors-settings__title.bottom span {
+  transform: rotate(0deg);
+}
+.settings {
+  flex: 0 0 30%;
+  padding: 20px;
+  margin: 0px 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  background-color: #f4f4f4;
+}
+.container {
+  width: 1000px;
+  margin: 30px auto;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px -7px;
+}
+.line {
+  height: 2px;
+  background-color: #e4e4e4;
+}
