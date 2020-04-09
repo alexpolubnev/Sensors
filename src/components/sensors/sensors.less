@@ -6,6 +6,7 @@
   margin: 0px 7px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 3px;
+  min-height: 977px;
 
   &-header {
     display: flex;
@@ -96,7 +97,56 @@
   }
 
 
+  .sensors-added {
+    display: flex;
+    align-items: center;
+    margin: 15px 20px;
 
+    &__new {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__button {
+      position: relative;
+      background-color: #fdc605;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 15px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 14px;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 14px;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(90deg);
+      }
+    }
+
+    &__title{
+      color: #fdc605;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      &::selection {
+        background: transparent;
+      }
+    }
+  }
 
 
 

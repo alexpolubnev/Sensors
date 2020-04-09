@@ -1,15 +1,13 @@
 import React from 'react';
-import Sensors from './components/sensors/Sensors'
-import Settings from './components/settings/Settings'
+import Main from './scenes/Main'
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 function App() {
   return (
-    <div className="container">
-      <div className="content">
-        <Sensors/>
-        <Settings/>
-      </div>
-    </div>
+    <Provider store={store}>
+      <Main/>
+    </Provider>
   );
 }
 
